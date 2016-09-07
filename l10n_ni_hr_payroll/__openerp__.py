@@ -29,7 +29,7 @@ Este modulo permite:
 Modifica la liquidación de nómina en Odoo para adaptarla a la
 legislación vigente en Nicaragua. 
 """,
-    'category' : 'Localización',
+    'category' : 'Localization',
     'author' : '3Nodus SAS',
     'website': 'http://www.3nodus.com/',
     'license': 'AGPL-3',

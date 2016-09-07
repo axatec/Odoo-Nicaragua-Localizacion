@@ -1,0 +1,37 @@
+code,id,name,sign,notprintable,parent_id:id
+root,atctn_root,IMPUESTOS,,,
+,atctn_iva_15_v,IVA 15% SOBRE VENTAS,,,atctn_root
+,atctn_v_iva_15_v,VALOR – IVA 15% SOBRE VENTAS,,,atctn_iva_15_v
+,atctn_b_iva_15_v,BASE – IVA 15% SOBRE VENTAS,,,atctn_iva_15_v
+,atctn_dv_iva_15_v,DEVOLUCION VALOR - IVA 15% SOBRE VENTAS,,,atctn_iva_15_v
+,atctn_db_iva_15_v,DEVOLUCION BASE – IVA 15% SOBRE VENTAS,,,atctn_iva_15_v
+,atctn_retencion_ir_2_,RETENCION IR 2%,,,atctn_root
+,atctn_v_retencion_ir_2_,VALOR – RETENCION IR 2%,,,atctn_retencion_ir_2_
+,atctn_b_retencion_ir_2_,BASE – RETENCION IR 2%,,,atctn_retencion_ir_2_
+,atctn_dv_retencion_ir_2_,DEVOLUCION VALOR – RETENCION IR 2%,,,atctn_retencion_ir_2_
+,atctn_db_retencion_ir_2_,DEVOLUCION BASE – RETENCION IR 2%,,,atctn_retencion_ir_2_
+,atctn_retencion_ir_10_sp,RETENCION IR 10% SERVICIOS PROFESIONALES,,,atctn_root
+,atctn_v_retencion_ir_10_sp,VALOR – RETENCION IR 10% SERVICIOS PROFESIONALES,,,atctn_retencion_ir_10_sp
+,atctn_b_retencion_ir_10_sp,BASE – RETENCION IR 10% SERVICIOS PROFESIONALES,,,atctn_retencion_ir_10_sp
+,atctn_dv_retencion_ir_10_sp,DEVOLUCION VALOR – RETENCION IR 10% SERVICIOS PROFESIONALES,,,atctn_retencion_ir_10_sp
+,atctn_db_retencion_ir_10_sp,DEVOLUCION BASE – RETENCION IR 10% SERVICIOS PROFESIONALES,,,atctn_retencion_ir_10_sp
+,atctn_retencion_ir_1_a,RETENCION IR 1% ALCALDIA,,,atctn_root
+,atctn_v_retencion_ir_1_a,VALOR – RETENCION IR 1% ALCALDIA,,,atctn_retencion_ir_1_a
+,atctn_b_retencion_ir_1_a,BASE – RETENCION IR 1% ALCALDIA,,,atctn_retencion_ir_1_a
+,atctn_dv_retencion_ir_1_a,DEVOLUCION VALOR – RETENCION IR 1% ALCALDIA,,,atctn_retencion_ir_1_a
+,atctn_db_retencion_ir_1_a,DEVOLUCION BASE – RETENCION IR 1% ALCALDIA,,,atctn_retencion_ir_1_a
+,atctn_retencion_ir_7_am,RETENCION IR 7% ALQUILER MOBILIARIO,,,atctn_root
+,atctn_v_retencion_ir_7_am,VALOR – RETENCION IR 7% ALQUILER MOBILIARIO,,,atctn_retencion_ir_7_am
+,atctn_b_retencion_ir_7_am,BASE – RETENCION IR 7% ALQUILER MOBILIARIO,,,atctn_retencion_ir_7_am
+,atctn_dv_retencion_ir_7_am,DEVOLUCION VALOR – RETENCION IR 7% ALQUILER MOBILIARIO,,,atctn_retencion_ir_7_am
+,atctn_db_retencion_ir_7_am,DEVOLUCION BASE – RETENCION IR 7% ALQUILER MOBILIARIO,,,atctn_retencion_ir_7_am
+,atctn_retencion_ir_15_nr,RETENCION IR 15% NO RESIDENCIAL,,,atctn_root
+,atctn_v_retencion_ir_15_nr,VALOR – RETENCION IR 15% NO RESIDENCIAL,,,atctn_retencion_ir_15_nr
+,atctn_b_retencion_ir_15_nr,BASE – RETENCION IR 15% NO RESIDENCIAL,,,atctn_retencion_ir_15_nr
+,atctn_dv_retencion_ir_15_nr,DEVOLUCION VALOR – RETENCION IR 15% NO RESIDENCIAL,,,atctn_retencion_ir_15_nr
+,atctn_db_retencion_ir_15_nr,DEVOLUCION BASE – RETENCION IR 15% NO RESIDENCIAL,,,atctn_retencion_ir_15_nr
+,atctn_retencion_ir_10_i/plp,RETENCION IR 10% INTERESES SOBRE PRESTAMO LP ,,,atctn_root
+,atctn_v_retencion_ir_10_i/plp,VALOR – RETENCION IR 10% INTERESES SOBRE PRESTAMO LP ,,,atctn_retencion_ir_10_i/plp
+,atctn_b_retencion_ir_10_i/plp,BASE – RETENCION IR 10% INTERESES SOBRE PRESTAMO LP ,,,atctn_retencion_ir_10_i/plp
+,atctn_dv_retencion_ir_10_i/plp,DEVOLUCION VALOR – RETENCION IR 10% INTERESES SOBRE PRESTAMO LP ,,,atctn_retencion_ir_10_i/plp
+,atctn_db_retencion_ir_10_i/plp,DEVOLUCION BASE – RETENCION IR 10% INTERESES SOBRE PRESTAMO LP ,,,atctn_retencion_ir_10_i/plp

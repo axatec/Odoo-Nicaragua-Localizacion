@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <!-- Chart Template -->
+        <record id="l10n_ni_chart_template_generic" model="account.chart.template">
+            <field name="name">Nicaragua - Generic Chart of Accounts</field>
+            <field name="account_root_id" ref="ni_puc_root"/>
+            <field name="tax_code_root_id" ref="atctn_root"/>
+            <field name="bank_account_view_id" ref="ni_puc_1102"/>
+            <field name="property_account_receivable" ref="ni_puc_110301"/>
+            <field name="property_account_payable" ref="ni_puc_210101"/>
+            <field name="currency_id" ref="base.NIO"/>
+        </record>
+    </data>
+</openerp>
