@@ -1,229 +1,219 @@
-id,code,name,type,parent_id:id,reconcile,user_type:id
-ni_puc_root,0,NI PUC ROOT,view,,FALSE,account.data_account_type_view
-ni_puc_1,1,ACTIVOS,view,ni_puc_root,FALSE,account.data_account_type_asset
-ni_puc_11,11,ACTIVOS CIRCULANTES,view,ni_puc_1,FALSE,account.data_account_type_asset
-ni_puc_1101,1101,CAJA,view,ni_puc_11,FALSE,account.data_account_type_cash
-ni_puc_110101,110101,Caja General,liquidity,ni_puc_1101,FALSE,account.data_account_type_cash
-ni_puc_110102,110102,Caja Chica Principal,liquidity,ni_puc_1101,FALSE,account.data_account_type_cash
-ni_puc_110103,110103,Caja Chica Mensajería,liquidity,ni_puc_1101,FALSE,account.data_account_type_cash
-ni_puc_1102,1102,BANCOS,view,ni_puc_11,FALSE,account.data_account_type_bank
-ni_puc_110201,110201,Banco 1 xx,liquidity,ni_puc_1102,FALSE,account.data_account_type_bank
-ni_puc_110202,110202,Banco 2 xx,liquidity,ni_puc_1102,FALSE,account.data_account_type_bank
-ni_puc_110203,110203,Banco 3 xx,liquidity,ni_puc_1102,FALSE,account.data_account_type_bank
-ni_puc_110204,110204,Banco 4 xx,liquidity,ni_puc_1102,FALSE,account.data_account_type_bank
-ni_puc_1103,1103,CUENTAS POR COBRAR,view,ni_puc_11,FALSE,account.data_account_type_receivable
-ni_puc_110301,110301,Clientes locales,receivable,ni_puc_1103,TRUE,account.data_account_type_receivable
-ni_puc_110302,110302,Clientes del exterior,receivable,ni_puc_1103,TRUE,account.data_account_type_receivable
-ni_puc_110303,110303,Anticipos Clientes,other,ni_puc_1103,FALSE,account.data_account_type_receivable
-ni_puc_1104,1104,OTRAS CUENTAS POR COBRAR,view,ni_puc_11,FALSE,account.data_account_type_asset
-ni_puc_110401,110401,Empleados,other,ni_puc_1104,FALSE,account.data_account_type_asset
-ni_puc_110402,110402,Socios,other,ni_puc_1104,FALSE,account.data_account_type_asset
-ni_puc_1105,1105,IMPUESTOS POR COBRAR,view,ni_puc_11,FALSE,account.data_account_type_asset
-ni_puc_110501,110501,IVA Crédito Fiscal,other,ni_puc_1105,FALSE,account.data_account_type_asset
-ni_puc_110502,110502,Anticipo IR,other,ni_puc_1105,FALSE,account.data_account_type_asset
-ni_puc_110503,110503,Retenciones de Clientes,other,ni_puc_1105,FALSE,account.data_account_type_asset
-ni_puc_1106,1106,COSTOS Y GASTOS PAGADOS POR ANTICIPADO,view,ni_puc_11,FALSE,account.data_account_type_asset
-ni_puc_110601,110601,Adecuaciones locativas,other,ni_puc_1106,FALSE,account.data_account_type_asset
-ni_puc_110602,110602,Software,other,ni_puc_1106,FALSE,account.data_account_type_asset
-ni_puc_110603,110603,Papelería Preimpresa,other,ni_puc_1106,FALSE,account.data_account_type_asset
-ni_puc_110604,110604,Seguros anuales,other,ni_puc_1106,FALSE,account.data_account_type_asset
-ni_puc_1107,1107,INVENTARIOS,view,ni_puc_11,FALSE,l10n_ni.account_type_stock
-ni_puc_110701,110701,Bodega 1. Principal,other,ni_puc_1107,FALSE,l10n_ni.account_type_stock
-ni_puc_110702,110702,Bodega 2. Aduana,other,ni_puc_1107,FALSE,l10n_ni.account_type_stock
-ni_puc_110703,110703,Bodega 3. Mercancías en tránsito,other,ni_puc_1107,FALSE,l10n_ni.account_type_stock
-ni_puc_110704,110704,PÉRDIDAS DE INVENTARIO,view,ni_puc_1107,FALSE,l10n_ni.account_type_stock
-ni_puc_11070401,11070401,Sobrante de Inventario,other,ni_puc_110704,FALSE,l10n_ni.account_type_stock
-ni_puc_11070402,11070402,Faltante de Inventarios,other,ni_puc_110704,FALSE,l10n_ni.account_type_stock
-ni_puc_11070403,11070403,Diferencias de precio compras de Inventario,other,ni_puc_110704,FALSE,l10n_ni.account_type_stock
-ni_puc_11070404,11070404,Deterioro de productos,other,ni_puc_110704,FALSE,l10n_ni.account_type_stock
-ni_puc_1108,1108,DEPÓSITOS EN GARANTÍA,view,ni_puc_11,FALSE,account.data_account_type_asset
-ni_puc_110801,110801,Alquileres,other,ni_puc_1108,FALSE,account.data_account_type_asset
-ni_puc_12,12,ACTIVOS FIJOS,view,ni_puc_1,FALSE,account.data_account_type_asset
-ni_puc_1201,1201,MOBILIARIO Y EQUIPO,view,ni_puc_12,FALSE,account.data_account_type_asset
-ni_puc_120101,120101,Mobiliario y equipo de oficina,other,ni_puc_1201,FALSE,account.data_account_type_asset
-ni_puc_120102,120102,Depreciación mobiliario y equipo de oficina,other,ni_puc_1201,FALSE,account.data_account_type_asset
-ni_puc_1202,1202,EQUIPO DE CÓMPUTO,view,ni_puc_12,FALSE,account.data_account_type_asset
-ni_puc_120201,120201,Equipo de cómputo,other,ni_puc_1202,FALSE,account.data_account_type_asset
-ni_puc_120202,120202,Depreciación equipo de cómputo,other,ni_puc_1202,FALSE,account.data_account_type_asset
-ni_puc_1203,1203,VEHÍCULOS,view,ni_puc_12,FALSE,account.data_account_type_asset
-ni_puc_120301,120301,Vehículos,other,ni_puc_1203,FALSE,account.data_account_type_asset
-ni_puc_120302,120302,Depreciación Vehículos,other,ni_puc_1203,FALSE,account.data_account_type_asset
-ni_puc_1204,1204,"PROPIEDADES, TERRENOS Y EDIFICIOS",view,ni_puc_12,FALSE,account.data_account_type_asset
-ni_puc_120401,120401,Bienes inmuebles,other,ni_puc_1204,FALSE,account.data_account_type_asset
-ni_puc_120402,120402,Valorización de Bienes inmuebles,other,ni_puc_1204,FALSE,account.data_account_type_asset
-ni_puc_2,2,PASIVOS,view,ni_puc_root,FALSE,account.data_account_type_liability
-ni_puc_21,21,PASIVO A CORTO PLAZO,view,ni_puc_2,FALSE,account.data_account_type_liability
-ni_puc_2101,2101,PROVEEDORES,view,ni_puc_21,FALSE,account.data_account_type_payable
-ni_puc_210101,210101,Proveedores Nacionales,payable,ni_puc_2101,TRUE,account.data_account_type_payable
-ni_puc_210102,210102,PROVEEDORES INTERNACIONALES,view,ni_puc_2101,FALSE,account.data_account_type_payable
-ni_puc_21010201,21010201,Bosch,payable,ni_puc_210102,TRUE,account.data_account_type_payable
-ni_puc_21010202,21010202,Otros Proveedores Internacionales,payable,ni_puc_210102,TRUE,account.data_account_type_payable
-ni_puc_210103,210103,Anticipos a Proveedores,payable,ni_puc_2101,TRUE,account.data_account_type_payable
-ni_puc_2102,2102,ACREEDORES,view,ni_puc_21,FALSE,account.data_account_type_payable
-ni_puc_210201,210201,Acreedores (Por Gsts de funcionamiento),payable,ni_puc_2102,TRUE,account.data_account_type_payable
-ni_puc_210202,210202,Otras cuentas por Pagar,payable,ni_puc_2102,TRUE,account.data_account_type_payable
-ni_puc_2103,2103,SOCIOS,view,ni_puc_21,FALSE,account.data_account_type_liability
-ni_puc_2104,2104,CUOTAS Y CONTRIBUCIONES,view,ni_puc_21,FALSE,account.data_account_type_liability
-ni_puc_210401,210401,Cuota Patronal INSS,payable,ni_puc_2104,TRUE,account.data_account_type_liability
-ni_puc_210402,210402,Cuota Laboral INSS,payable,ni_puc_2104,TRUE,account.data_account_type_liability
-ni_puc_210403,210403,Cuota Patronal INATEC,payable,ni_puc_2104,TRUE,account.data_account_type_liability
-ni_puc_210404,210404,INSS Contratista,payable,ni_puc_2104,TRUE,account.data_account_type_liability
-ni_puc_2105,2105,PROVISIONES LABORALES,view,ni_puc_21,FALSE,account.data_account_type_liability
-ni_puc_210501,210501,Aguinaldo,payable,ni_puc_2105,TRUE,account.data_account_type_liability
-ni_puc_210502,210502,Bonos,payable,ni_puc_2105,TRUE,account.data_account_type_liability
-ni_puc_210503,210503,Vacaciones,payable,ni_puc_2105,TRUE,account.data_account_type_liability
-ni_puc_210504,210504,Indemnizaciones,payable,ni_puc_2105,TRUE,account.data_account_type_liability
-ni_puc_2106,2106,IMPUESTOS Y CONTRIBUCIONES,view,ni_puc_21,FALSE,account.conf_account_type_tax
-ni_puc_210601,210601,IVA por pagar,payable,ni_puc_2106,TRUE,account.conf_account_type_tax
-ni_puc_210602,210602,Retención IR Empleados,payable,ni_puc_2106,TRUE,account.conf_account_type_tax
-ni_puc_210603,210603,Retención 1% IMI Alcaldía de Managua,payable,ni_puc_2106,TRUE,account.conf_account_type_tax
-ni_puc_210604,210604,RETENCIONES A TERCEROS,view,ni_puc_2106,FALSE,account.conf_account_type_tax
-ni_puc_21060401,21060401,Retención IR 2%,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_21060402,21060402,Retención IR 20% No Domiciliados,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_21060403,21060403,Retención IR 10% Serv. Profesionales,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_21060404,21060404,Retención IR 15% no domiciliados persona jurídica,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_21060405,21060405,Retención IR 7% Alquiler Mobiliario,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_21060406,21060406,Retención IR 10% Interes S/Préstamos a L.P.,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_21060407,21060407,Retención IR 3% Transp. Marítimo y aéreo,payable,ni_puc_210604,TRUE,account.conf_account_type_tax
-ni_puc_22,22,PASIVO A LARGO PLAZO,view,ni_puc_2,FALSE,account.data_account_type_liability
-ni_puc_2201,2201,OBLIGACIONES FINANCIERAS,view,ni_puc_22,FALSE,account.data_account_type_liability
-ni_puc_2202,2202,OTROS PRESTAMOS,view,ni_puc_22,FALSE,account.data_account_type_liability
-ni_puc_3,3,CAPITAL,view,ni_puc_root,FALSE,account.conf_account_type_equity
-ni_puc_31,31,CAPITAL Y RESERVAS,view,ni_puc_3,FALSE,account.conf_account_type_equity
-ni_puc_3101,3101,"CAPITAL AUTORIZADO, SUSCRITO Y PAGADO",view,ni_puc_31,FALSE,account.conf_account_type_equity
-ni_puc_310101,310101,Capital Suscrito y Autorizado,other,ni_puc_3101,FALSE,account.conf_account_type_equity
-ni_puc_310102,310102,Capital Pagado,other,ni_puc_3101,FALSE,account.conf_account_type_equity
-ni_puc_310103,310103,Acciones por suscribir,other,ni_puc_3101,FALSE,account.conf_account_type_equity
-ni_puc_3102,3102,RESERVA LEGAL,view,ni_puc_31,FALSE,account.conf_account_type_equity
-ni_puc_310201,310201,Reserva Legal,other,ni_puc_3102,FALSE,account.conf_account_type_equity
-ni_puc_32,32,UTILIDADES Y/O PÉRDIDAS,view,ni_puc_3,FALSE,account.conf_account_type_equity
-ni_puc_3201,3201,UTILIDAD (PÉRDIDA) ACUMULADA,view,ni_puc_32,FALSE,account.conf_account_type_equity
-ni_puc_3202,3202,UTILIDAD DEL EJERCICIO,view,ni_puc_32,FALSE,account.conf_account_type_equity
-ni_puc_3203,3203,CUENTA PUENTE,view,ni_puc_32,FALSE,account.conf_account_type_equity
-ni_puc_4,4,INGRESOS,view,ni_puc_root,FALSE,account.data_account_type_income
-ni_puc_41,41,VENTAS NACIONALES,view,ni_puc_4,FALSE,account.data_account_type_income
-ni_puc_4101,4101,Venta de productos,other,ni_puc_41,FALSE,account.data_account_type_income
-ni_puc_4102,4102,Venta de herramientas,other,ni_puc_41,FALSE,account.data_account_type_income
-ni_puc_4103,4103,Venta de Servicios,other,ni_puc_41,FALSE,account.data_account_type_income
-ni_puc_42,42,VENTAS AL EXTERIOR,view,ni_puc_4,FALSE,account.data_account_type_income
-ni_puc_4201,4201,Venta de productos,other,ni_puc_42,FALSE,account.data_account_type_income
-ni_puc_5,5,COSTO DE LA MERCANCÍA VENDIDA,view,ni_puc_root,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_51,51,COSTO DE VENTAS NACIONALES,view,ni_puc_5,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_5101,5101,COSTO DE PRODUCTOS VENTAS NACIONALES,view,ni_puc_51,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510101,510101,Costo de Productos ventas nacionales (Compras),other,ni_puc_5101,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510102,510102,Aranceles productos ventas nacionales,other,ni_puc_5101,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510103,510103,Seguros productos ventas nacionales,other,ni_puc_5101,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510104,510104,Transportes productos ventas nacionales,other,ni_puc_5101,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510105,510105,Servicios aduaneros productos ventas nacionales,other,ni_puc_5101,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_5102,5102,COSTO DE HERRAMIENTAS VENDIDAS NACIONALES,view,ni_puc_51,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510201,510201,Costo de Herramientas Ventas Nacionales (Compras),other,ni_puc_5102,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510202,510202,Aranceles herramientas vendidas en el pais,other,ni_puc_5102,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510203,510203,Seguros herramientas vendidas en el pais,other,ni_puc_5102,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510204,510204,Transportes herramientas vendidas en el pais,other,ni_puc_5102,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510205,510205,Servicios aduaneros herramientas vendidas en el pais,other,ni_puc_5102,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_5103,5103,COSTO DE SERVICIOS/ ENTRENAMIENTOS NACIONALES,view,ni_puc_51,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510301,510301,Honorarios por venta de servicios/entrenamientos,other,ni_puc_5103,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510302,510302,Hoteles por venta de servicios/entrenamientos,other,ni_puc_5103,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510303,510303,Alimentación por venta de servicios/entrenamientos,other,ni_puc_5103,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_510304,510304,Alquiler local por venta de servicios/entrenamientos,other,ni_puc_5103,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_52,52,COSTO DE VENTAS AL EXTERIOR,view,ni_puc_5,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_5201,5201,COSTO DE PRODUCTOS AL EXTERIOR,view,ni_puc_52,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_520101,520101,Costo de Productos ventas al exterior (compras),other,ni_puc_5201,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_520102,520102,Costo de aranceles,other,ni_puc_5201,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_520103,520103,Costo de Seguros,other,ni_puc_5201,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_520104,520104,Costo de Transportes,other,ni_puc_5201,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_520105,520105,Servicios logística de aduana,other,ni_puc_5201,FALSE,l10n_ni.account_type_selling_costs
-ni_puc_6,6,GASTOS GENERALES,view,ni_puc_root,FALSE,account.data_account_type_expense
-ni_puc_61,61,GASTOS DE ADMINISTRACION,view,ni_puc_6,FALSE,account.data_account_type_expense
-ni_puc_6101,6101,GASTOS DE PERSONAL DE ADMON,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610101,610101,Sueldos y Salarios de Admón,other,ni_puc_6101,FALSE,account.data_account_type_expense
-ni_puc_610102,610102,PRESTACIONES LABORALES ADMON,view,ni_puc_6101,FALSE,account.data_account_type_expense
-ni_puc_61010201,61010201,Aguinaldo Admón,other,ni_puc_610102,FALSE,account.data_account_type_expense
-ni_puc_61010202,61010202,Bono 14 Admón,other,ni_puc_610102,FALSE,account.data_account_type_expense
-ni_puc_61010203,61010203,Vacaciones Admón,other,ni_puc_610102,FALSE,account.data_account_type_expense
-ni_puc_61010204,61010204,Indemnización Admón,other,ni_puc_610102,FALSE,account.data_account_type_expense
-ni_puc_61010205,61010205,INSS Patronal Admón,other,ni_puc_610102,FALSE,account.data_account_type_expense
-ni_puc_61010206,61010206,INATEC Admón,other,ni_puc_610102,FALSE,account.data_account_type_expense
-ni_puc_610103,610103,Atención al personal Admón,other,ni_puc_6101,FALSE,account.data_account_type_expense
-ni_puc_610104,610104,Capacitación de personal Admón,other,ni_puc_6101,FALSE,account.data_account_type_expense
-ni_puc_610105,610105,Subsidio educativo Admón,other,ni_puc_6101,FALSE,account.data_account_type_expense
-ni_puc_6102,6102,GASTOS DE FUNCIONAMIENTO,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610201,610201,ARRENDAMIENTOS Y ADECUACIONES LOCATIVAS,view,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_61020101,61020101,Arrendamientos,other,ni_puc_610201,FALSE,account.data_account_type_expense
-ni_puc_61020102,61020102,Mantenimiento y adecuaciones locativas,other,ni_puc_610201,FALSE,account.data_account_type_expense
-ni_puc_610202,610202,SERVICIOS PUBLICOS,view,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_61020201,61020201,Energía eléctrica,other,ni_puc_610202,FALSE,account.data_account_type_expense
-ni_puc_61020202,61020202,Acueducto y alcantarillado,other,ni_puc_610202,FALSE,account.data_account_type_expense
-ni_puc_61020203,61020203,Telefonía E1,other,ni_puc_610202,FALSE,account.data_account_type_expense
-ni_puc_61020204,61020204,Telefonía celular,other,ni_puc_610202,FALSE,account.data_account_type_expense
-ni_puc_61020205,61020205,Internet,other,ni_puc_610202,FALSE,account.data_account_type_expense
-ni_puc_610203,610203,HONORARIOS Y SERVICIOS EXTERNOS,view,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_61020301,61020301,Honorarios legales,other,ni_puc_610203,FALSE,account.data_account_type_expense
-ni_puc_61020302,61020302,Honorarios y Servicios Profesionales,other,ni_puc_610203,FALSE,account.data_account_type_expense
-ni_puc_610204,610204,PAPELERIA Y UTILES DE ESCRITORIO,view,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_61020401,61020401,Papelería Preimpresa,other,ni_puc_610204,FALSE,account.data_account_type_expense
-ni_puc_61020402,61020402,Papelería y útiles de escritorio,other,ni_puc_610204,FALSE,account.data_account_type_expense
-ni_puc_610205,610205,Cuotas y suscripciones,other,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_610206,610206,Donaciones,other,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_610207,610207,ASEO Y CAFETERIA,view,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_61020701,61020701,Implementos de aseo,other,ni_puc_610207,FALSE,account.data_account_type_expense
-ni_puc_61020702,61020702,Suministros de cafetería,other,ni_puc_610207,FALSE,account.data_account_type_expense
-ni_puc_610208,610208,Restaurantes directivos,other,ni_puc_6102,FALSE,account.data_account_type_expense
-ni_puc_6103,6103,IMPUESTOS Y CONTRIBUCIONES,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610301,610301,Impuestos y Contribuciones,other,ni_puc_6103,FALSE,account.data_account_type_expense
-ni_puc_610302,610302,Impuesto Bienes Inmuebles (IBI),other,ni_puc_6103,FALSE,account.data_account_type_expense
-ni_puc_6104,6104,AMORTIZACIONES Y DEPRECIACIONES,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610401,610401,Depreciaciones,other,ni_puc_6104,FALSE,account.data_account_type_expense
-ni_puc_610402,610402,Amortizaciones,other,ni_puc_6104,FALSE,account.data_account_type_expense
-ni_puc_6105,6105,GASTOS NO DEDUCIBLES,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610501,610501,Gastos no deducibles - IR no retenido,other,ni_puc_6105,FALSE,account.data_account_type_expense
-ni_puc_610502,610502,Gastos no deducibles - Multas,other,ni_puc_6105,FALSE,account.data_account_type_expense
-ni_puc_610503,610503,Otros Gastos no deducibles,other,ni_puc_6105,FALSE,account.data_account_type_expense
-ni_puc_6106,6106,PERDIDA POR CREDITOS,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610601,610601,Cartera de difícil cobro,other,ni_puc_6106,FALSE,account.data_account_type_expense
-ni_puc_6107,6107,DEPRECIACIONES Y AMORTIZACIONES,view,ni_puc_61,FALSE,account.data_account_type_expense
-ni_puc_610701,610701,Depreciaciones,other,ni_puc_6107,FALSE,account.data_account_type_expense
-ni_puc_610702,610702,Amortizaciones,other,ni_puc_6107,FALSE,account.data_account_type_expense
-ni_puc_62,62,GASTOS DE VENTAS,view,ni_puc_6,FALSE,account.data_account_type_expense
-ni_puc_6201,6201,GASTOS DE PERSONAL DE VENTAS,view,ni_puc_62,FALSE,account.data_account_type_expense
-ni_puc_620101,620101,Sueldos y salarios Ventas,other,ni_puc_6201,FALSE,account.data_account_type_expense
-ni_puc_620102,620102,Prestaciones laborales Ventas,other,ni_puc_6201,FALSE,account.data_account_type_expense
-ni_puc_620103,620103,Gastos variables Ventas,other,ni_puc_6201,FALSE,account.data_account_type_expense
-ni_puc_6202,6202,GASTOS DEL EXTERIOR,view,ni_puc_62,FALSE,account.data_account_type_expense
-ni_puc_620201,620201,Inscripción en ferias,other,ni_puc_6202,FALSE,account.data_account_type_expense
-ni_puc_620202,620202,Transportes en el exterior,other,ni_puc_6202,FALSE,account.data_account_type_expense
-ni_puc_620203,620203,Hoteles y restaurantes,other,ni_puc_6202,FALSE,account.data_account_type_expense
-ni_puc_6203,6203,VIVIENDA ALIMENTACION Y TRANSPORTE NACIONAL,view,ni_puc_62,FALSE,account.data_account_type_expense
-ni_puc_620301,620301,Gastos de vivienda,other,ni_puc_6203,FALSE,account.data_account_type_expense
-ni_puc_620302,620302,Gastos de Transporte,other,ni_puc_6203,FALSE,account.data_account_type_expense
-ni_puc_620303,620303,Gastos de Alimentación,other,ni_puc_6203,FALSE,account.data_account_type_expense
-ni_puc_6204,6204,ALQUILER DE VEHICULOS,view,ni_puc_62,FALSE,account.data_account_type_expense
-ni_puc_6205,6205,MANTENIMIENTO DE VEHICULOS,view,ni_puc_62,FALSE,account.data_account_type_expense
-ni_puc_620501,620501,VEHICULO 1 MERCEDES,view,ni_puc_6205,FALSE,account.data_account_type_expense
-ni_puc_62050101,62050101,Combustibles Veh. 1,other,ni_puc_620501,FALSE,account.data_account_type_expense
-ni_puc_62050102,62050102,Vehículo 1 Mercedes,other,ni_puc_620501,FALSE,account.data_account_type_expense
-ni_puc_62050103,62050103,Mantenimientos Veh. 1,other,ni_puc_620501,FALSE,account.data_account_type_expense
-ni_puc_620502,620502,VEHICULO 2,view,ni_puc_6205,FALSE,account.data_account_type_expense
-ni_puc_62050201,62050201,Combustibles Veh. 2,other,ni_puc_620502,FALSE,account.data_account_type_expense
-ni_puc_62050202,62050202,Lubricantes Veh. 2,other,ni_puc_620502,FALSE,account.data_account_type_expense
-ni_puc_62050203,62050203,Mantenimientos Veh. 2,other,ni_puc_620502,FALSE,account.data_account_type_expense
-ni_puc_6206,6206,MANTENIMIENTO DE MOTOS,view,ni_puc_62,FALSE,account.data_account_type_expense
-ni_puc_620601,620601,UTILIDAD O PERDIDA POR VENTA DE ACTIVOS,view,ni_puc_6206,FALSE,account.data_account_type_expense
-ni_puc_62060101,62060101,Combustibles Moto 1,other,ni_puc_620601,FALSE,account.data_account_type_expense
-ni_puc_62060102,62060102,Lubricantes Moto 2,other,ni_puc_620601,FALSE,account.data_account_type_expense
-ni_puc_62060103,62060103,Mantenimientos Moto 2,other,ni_puc_620601,FALSE,account.data_account_type_expense
-ni_puc_7,7,OTROS INGRESOS,view,ni_puc_root,FALSE,account.data_account_type_income
-ni_puc_71,71,PRODUCTOS FINANCIEROS,view,ni_puc_7,FALSE,account.data_account_type_income
-ni_puc_7101,7101,INTERESES DEVENGADOS S/CTA MONETARIA,view,ni_puc_71,FALSE,account.data_account_type_income
-ni_puc_7102,7102,OTROS INGRESOS,view,ni_puc_71,FALSE,account.data_account_type_income
-ni_puc_72,72,GANANCIA Y/O PÉRDIDA CAMBIARIA,view,ni_puc_7,FALSE,account.data_account_type_income
-ni_puc_7201,7201,DIFERENCIAL CAMBIARIO,view,ni_puc_72,FALSE,account.data_account_type_income
-ni_puc_7202,7202,DIFERENCIAL CAMBIARIO POR REEX,view,ni_puc_72,FALSE,account.data_account_type_income
-ni_puc_73,73,VENTA DE ACTIVO FIJO,view,ni_puc_7,FALSE,account.data_account_type_income
-ni_puc_7301,7301,UTILIDAD O PERDIDA POR VENTA DE ACTIVOS FIJOS,view,ni_puc_73,FALSE,account.data_account_type_income
-ni_puc_8,8,GASTOS FINANCIEROS,view,ni_puc_root,FALSE,account.data_account_type_expense
-ni_puc_81,81,GASTOS BANCARIOS,view,ni_puc_8,FALSE,account.data_account_type_expense
-ni_puc_8101,8101,INTERESES POR PRÉSTAMOS BANCARIOS,view,ni_puc_81,FALSE,account.data_account_type_expense
-ni_puc_8102,8102,COMISIONES BANCARIAS,view,ni_puc_81,FALSE,account.data_account_type_expense
-ni_puc_8103,8103,IMPUESTOS A LA OPERACIONES BANCARIAS,view,ni_puc_81,FALSE,account.data_account_type_expense
-ni_puc_8104,8104,INTERESES POR SOBREGIROS,view,ni_puc_81,FALSE,account.data_account_type_expense
+"id","code","name","type","parent_id:id","reconcile","user_type:id"
+"ni_puc_root",0,"NI PUC ROOT","view",,"FALSE","account.data_account_type_view"
+"ni_puc_1",1,"ACTIVOS","view","ni_puc_root","FALSE","account.data_account_type_asset"
+"ni_puc_11",11,"ACTIVOS CIRCULANTES","view","ni_puc_1","FALSE","account.data_account_type_asset"
+"ni_puc_1101",1101,"CAJA","view","ni_puc_11","FALSE","account.data_account_type_cash"
+"ni_puc_110101",110101,"Caja General","liquidity","ni_puc_1101","FALSE","account.data_account_type_cash"
+"ni_puc_110102",110102,"Caja Chica Principal","liquidity","ni_puc_1101","FALSE","account.data_account_type_cash"
+"ni_puc_110103",110103,"Caja Chica Mensajería","liquidity","ni_puc_1101","FALSE","account.data_account_type_cash"
+"ni_puc_1102",1102,"BANCOS","view","ni_puc_11","FALSE","account.data_account_type_bank"
+"ni_puc_1103",1103,"CUENTAS POR COBRAR","view","ni_puc_11","FALSE","account.data_account_type_receivable"
+"ni_puc_110301",110301,"Clientes locales","receivable","ni_puc_1103","TRUE","account.data_account_type_receivable"
+"ni_puc_110302",110302,"Clientes del exterior","receivable","ni_puc_1103","TRUE","account.data_account_type_receivable"
+"ni_puc_110303",110303,"Anticipos Clientes","other","ni_puc_1103","FALSE","account.data_account_type_receivable"
+"ni_puc_1104",1104,"OTRAS CUENTAS POR COBRAR","view","ni_puc_11","FALSE","account.data_account_type_asset"
+"ni_puc_110401",110401,"Empleados","other","ni_puc_1104","FALSE","account.data_account_type_asset"
+"ni_puc_110402",110402,"Socios","other","ni_puc_1104","FALSE","account.data_account_type_asset"
+"ni_puc_1105",1105,"IMPUESTOS POR COBRAR","view","ni_puc_11","FALSE","account.data_account_type_asset"
+"ni_puc_110501",110501,"IVA Crédito Fiscal","other","ni_puc_1105","FALSE","account.data_account_type_asset"
+"ni_puc_110502",110502,"IVA Importaciones","other","ni_puc_1105","FALSE","account.data_account_type_asset"
+"ni_puc_110503",110503,"IVA Ventas Nacionales","other","ni_puc_1105","FALSE","account.data_account_type_asset"
+"ni_puc_110504",110504,"Anticipo IR","other","ni_puc_1105","FALSE","account.data_account_type_asset"
+"ni_puc_110505",110505,"Retenciones de Clientes","other","ni_puc_1105","FALSE","account.data_account_type_asset"
+"ni_puc_1106",1106,"COSTOS Y GASTOS PAGADOS POR ANTICIPADO","view","ni_puc_11","FALSE","account.data_account_type_asset"
+"ni_puc_110601",110601,"Adecuaciones Locativas Diferidas","other","ni_puc_1106","FALSE","account.data_account_type_asset"
+"ni_puc_110602",110602,"Software","other","ni_puc_1106","FALSE","account.data_account_type_asset"
+"ni_puc_110603",110603,"Papelería Preimpresa","other","ni_puc_1106","FALSE","account.data_account_type_asset"
+"ni_puc_110604",110604,"Seguros Anuales","other","ni_puc_1106","FALSE","account.data_account_type_asset"
+"ni_puc_1107",1107,"INVENTARIOS","view","ni_puc_11","FALSE","l10n_ni.account_type_stock"
+"ni_puc_110701",110701,"Bodega 1. Principal","other","ni_puc_1107","FALSE","l10n_ni.account_type_stock"
+"ni_puc_110702",110702,"Bodega 2. Aduana","other","ni_puc_1107","FALSE","l10n_ni.account_type_stock"
+"ni_puc_110703",110703,"Bodega 3. Mercancías en Tránsito","other","ni_puc_1107","FALSE","l10n_ni.account_type_stock"
+"ni_puc_110704",110704,"PÉRDIDAS DE INVENTARIO","view","ni_puc_1107","FALSE","l10n_ni.account_type_stock"
+"ni_puc_11070401",11070401,"Sobrante de Inventario","other","ni_puc_110704","FALSE","l10n_ni.account_type_stock"
+"ni_puc_11070402",11070402,"Faltante de Inventarios","other","ni_puc_110704","FALSE","l10n_ni.account_type_stock"
+"ni_puc_11070403",11070403,"Diferencias de Precio Compras de Inventario","other","ni_puc_110704","FALSE","l10n_ni.account_type_stock"
+"ni_puc_11070404",11070404,"Deterioro de Productos","other","ni_puc_110704","FALSE","l10n_ni.account_type_stock"
+"ni_puc_1108",1108,"DEPÓSITOS EN GARANTÍA","view","ni_puc_11","FALSE","account.data_account_type_asset"
+"ni_puc_110801",110801,"Alquileres","other","ni_puc_1108","FALSE","account.data_account_type_asset"
+"ni_puc_12",12,"ACTIVOS FIJOS","view","ni_puc_1","FALSE","account.data_account_type_asset"
+"ni_puc_1201",1201,"MOBILIARIO Y EQUIPO","view","ni_puc_12","FALSE","account.data_account_type_asset"
+"ni_puc_120101",120101,"Mobiliario y Equipo de Oficina","other","ni_puc_1201","FALSE","account.data_account_type_asset"
+"ni_puc_120102",120102,"Depreciación Mobiliario y Equipo de Oficina","other","ni_puc_1201","FALSE","account.data_account_type_asset"
+"ni_puc_1202",1202,"EQUIPO DE CÓMPUTO","view","ni_puc_12","FALSE","account.data_account_type_asset"
+"ni_puc_120201",120201,"Equipo de Cómputo","other","ni_puc_1202","FALSE","account.data_account_type_asset"
+"ni_puc_120202",120202,"Depreciación Equipo de Cómputo","other","ni_puc_1202","FALSE","account.data_account_type_asset"
+"ni_puc_1203",1203,"VEHÍCULOS","view","ni_puc_12","FALSE","account.data_account_type_asset"
+"ni_puc_120301",120301,"Vehículos","other","ni_puc_1203","FALSE","account.data_account_type_asset"
+"ni_puc_120302",120302,"Depreciación Vehículos","other","ni_puc_1203","FALSE","account.data_account_type_asset"
+"ni_puc_1204",1204,"PROPIEDADES, TERRENOS Y EDIFICIOS","view","ni_puc_12","FALSE","account.data_account_type_asset"
+"ni_puc_120401",120401,"Bienes Inmuebles","other","ni_puc_1204","FALSE","account.data_account_type_asset"
+"ni_puc_120402",120402,"Valorización de Bienes Inmuebles","other","ni_puc_1204","FALSE","account.data_account_type_asset"
+"ni_puc_2",2,"PASIVOS","view","ni_puc_root","FALSE","account.data_account_type_liability"
+"ni_puc_21",21,"PASIVO A CORTO PLAZO","view","ni_puc_2","FALSE","account.data_account_type_liability"
+"ni_puc_2101",2101,"PROVEEDORES","view","ni_puc_21","FALSE","account.data_account_type_payable"
+"ni_puc_210101",210101,"Proveedores Nacionales","payable","ni_puc_2101","TRUE","account.data_account_type_payable"
+"ni_puc_210102",210102,"PROVEEDORES INTERNACIONALES","view","ni_puc_2101","FALSE","account.data_account_type_payable"
+"ni_puc_21010201",21010201,"Bosch","payable","ni_puc_210102","TRUE","account.data_account_type_payable"
+"ni_puc_21010202",21010202,"Otros Proveedores Internacionales","payable","ni_puc_210102","TRUE","account.data_account_type_payable"
+"ni_puc_210103",210103,"Anticipos a Proveedores","payable","ni_puc_2101","TRUE","account.data_account_type_payable"
+"ni_puc_2102",2102,"ACREEDORES","view","ni_puc_21","FALSE","account.data_account_type_payable"
+"ni_puc_210201",210201,"Acreedores (Por Gastos de Funcionamiento)","payable","ni_puc_2102","TRUE","account.data_account_type_payable"
+"ni_puc_210202",210202,"Otras Cuentas por Pagar","payable","ni_puc_2102","TRUE","account.data_account_type_payable"
+"ni_puc_2103",2103,"SOCIOS","view","ni_puc_21","FALSE","account.data_account_type_liability"
+"ni_puc_2104",2104,"CUOTAS Y CONTRIBUCIONES","view","ni_puc_21","FALSE","account.data_account_type_liability"
+"ni_puc_210401",210401,"Cuota Patronal INSS","payable","ni_puc_2104","TRUE","account.data_account_type_liability"
+"ni_puc_210402",210402,"Cuota Laboral INSS","payable","ni_puc_2104","TRUE","account.data_account_type_liability"
+"ni_puc_210403",210403,"Cuota Patronal INATEC","payable","ni_puc_2104","TRUE","account.data_account_type_liability"
+"ni_puc_210404",210404,"INSS Contratista","payable","ni_puc_2104","TRUE","account.data_account_type_liability"
+"ni_puc_2105",2105,"PROVISIONES LABORALES","view","ni_puc_21","FALSE","account.data_account_type_liability"
+"ni_puc_210501",210501,"Aguinaldo","payable","ni_puc_2105","TRUE","account.data_account_type_liability"
+"ni_puc_210502",210502,"Bonos","payable","ni_puc_2105","TRUE","account.data_account_type_liability"
+"ni_puc_210503",210503,"Vacaciones","payable","ni_puc_2105","TRUE","account.data_account_type_liability"
+"ni_puc_210504",210504,"Indemnizaciones","payable","ni_puc_2105","TRUE","account.data_account_type_liability"
+"ni_puc_2106",2106,"IMPUESTOS Y CONTRIBUCIONES","view","ni_puc_21","FALSE","account.conf_account_type_tax"
+"ni_puc_210601",210601,"IVA por pagar","other","ni_puc_2106","FALSE","account.conf_account_type_tax"
+"ni_puc_210602",210602,"Retención IR Empleados","other","ni_puc_2106","FALSE","account.conf_account_type_tax"
+"ni_puc_210603",210603,"Retención 1% IMI Alcaldía de Managua","other","ni_puc_2106","FALSE","account.conf_account_type_tax"
+"ni_puc_210604",210604,"RETENCIONES A TERCEROS","view","ni_puc_2106","FALSE","account.conf_account_type_tax"
+"ni_puc_21060401",21060401,"Retención IR 2% Compra de Bienes","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_21060402",21060402,"Retención IR 20% No Domiciliados","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_21060403",21060403,"Retención IR 10% Serv. Profesionales","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_21060404",21060404,"Retención IR 15% no domiciliados persona jurídica","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_21060405",21060405,"Retención IR 7% Alquiler Mobiliario","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_21060406",21060406,"Retención IR 10% Interes S/Préstamos a L.P.","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_21060407",21060407,"Retención IR 3% Transp. Marítimo y Aéreo","other","ni_puc_210604","FALSE","account.conf_account_type_tax"
+"ni_puc_210605",210605,"DAI por Pagar","other","ni_puc_2106","FALSE","account.conf_account_type_tax"
+"ni_puc_22",22,"PASIVO A LARGO PLAZO","view","ni_puc_2","FALSE","account.data_account_type_liability"
+"ni_puc_2201",2201,"OBLIGACIONES FINANCIERAS","view","ni_puc_22","FALSE","account.data_account_type_liability"
+"ni_puc_2202",2202,"OTROS PRESTAMOS","view","ni_puc_22","FALSE","account.data_account_type_liability"
+"ni_puc_3",3,"CAPITAL","view","ni_puc_root","FALSE","account.conf_account_type_equity"
+"ni_puc_31",31,"CAPITAL Y RESERVAS","view","ni_puc_3","FALSE","account.conf_account_type_equity"
+"ni_puc_3101",3101,"CAPITAL AUTORIZADO, SUSCRITO Y PAGADO","view","ni_puc_31","FALSE","account.conf_account_type_equity"
+"ni_puc_310101",310101,"Capital Suscrito y Autorizado","other","ni_puc_3101","FALSE","account.conf_account_type_equity"
+"ni_puc_310102",310102,"Capital Pagado","other","ni_puc_3101","FALSE","account.conf_account_type_equity"
+"ni_puc_310103",310103,"Acciones por Suscribir","other","ni_puc_3101","FALSE","account.conf_account_type_equity"
+"ni_puc_3102",3102,"RESERVA LEGAL","view","ni_puc_31","FALSE","account.conf_account_type_equity"
+"ni_puc_310201",310201,"Reserva Legal","other","ni_puc_3102","FALSE","account.conf_account_type_equity"
+"ni_puc_32",32,"UTILIDADES Y/O PÉRDIDAS","view","ni_puc_3","FALSE","account.conf_account_type_equity"
+"ni_puc_3201",3201,"UTILIDAD (PÉRDIDA) ACUMULADA","view","ni_puc_32","FALSE","account.conf_account_type_equity"
+"ni_puc_3202",3202,"UTILIDAD DEL EJERCICIO","view","ni_puc_32","FALSE","account.conf_account_type_equity"
+"ni_puc_3203",3203,"CUENTA PUENTE","view","ni_puc_32","FALSE","account.conf_account_type_equity"
+"ni_puc_4",4,"INGRESOS","view","ni_puc_root","FALSE","account.data_account_type_income"
+"ni_puc_41",41,"VENTAS NACIONALES","view","ni_puc_4","FALSE","account.data_account_type_income"
+"ni_puc_4101",4101,"Venta de Productos","other","ni_puc_41","FALSE","account.data_account_type_income"
+"ni_puc_4102",4102,"Venta de Herramientas","other","ni_puc_41","FALSE","account.data_account_type_income"
+"ni_puc_4103",4103,"Venta de Servicios","other","ni_puc_41","FALSE","account.data_account_type_income"
+"ni_puc_42",42,"VENTAS AL EXTERIOR","view","ni_puc_4","FALSE","account.data_account_type_income"
+"ni_puc_4201",4201,"Venta de Productos","other","ni_puc_42","FALSE","account.data_account_type_income"
+"ni_puc_5",5,"COSTO DE LA MERCANCÍA VENDIDA","view","ni_puc_root","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_51",51,"COSTO DE VENTAS NACIONALES","view","ni_puc_5","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_5101",5101,"Costo de Productos Ventas Nacionales","other","ni_puc_51","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_5102",5102,"Costo de Herramientas Ventas Nacionales","other","ni_puc_51","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_5103",5103,"Costo de Servicios/Entrenamientos Nacionales","other","ni_puc_51","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_52",52,"COSTO DE VENTAS AL EXTERIOR","view","ni_puc_5","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_5201",5201,"Costo de Ventas al Exterior","other","ni_puc_52","FALSE","l10n_ni.account_type_selling_costs"
+"ni_puc_6",6,"GASTOS GENERALES","view","ni_puc_root","FALSE","account.data_account_type_expense"
+"ni_puc_61",61,"GASTOS DE ADMINISTRACION","view","ni_puc_6","FALSE","account.data_account_type_expense"
+"ni_puc_6101",6101,"GASTOS DE PERSONAL DE ADMON","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610101",610101,"Sueldos y Salarios de Admón","other","ni_puc_6101","FALSE","account.data_account_type_expense"
+"ni_puc_610102",610102,"PRESTACIONES LABORALES ADMON","view","ni_puc_6101","FALSE","account.data_account_type_expense"
+"ni_puc_61010201",61010201,"Aguinaldo Admón","other","ni_puc_610102","FALSE","account.data_account_type_expense"
+"ni_puc_61010202",61010202,"Bono 14 Admón","other","ni_puc_610102","FALSE","account.data_account_type_expense"
+"ni_puc_61010203",61010203,"Vacaciones Admón","other","ni_puc_610102","FALSE","account.data_account_type_expense"
+"ni_puc_61010204",61010204,"Indemnización Admón","other","ni_puc_610102","FALSE","account.data_account_type_expense"
+"ni_puc_61010205",61010205,"INSS Patronal Admón","other","ni_puc_610102","FALSE","account.data_account_type_expense"
+"ni_puc_61010206",61010206,"INATEC Admón","other","ni_puc_610102","FALSE","account.data_account_type_expense"
+"ni_puc_610103",610103,"Atención al Personal Admón","other","ni_puc_6101","FALSE","account.data_account_type_expense"
+"ni_puc_610104",610104,"Capacitación de Personal Admón","other","ni_puc_6101","FALSE","account.data_account_type_expense"
+"ni_puc_610105",610105,"Subsidio Educativo Admón","other","ni_puc_6101","FALSE","account.data_account_type_expense"
+"ni_puc_610106",610106,"Uniformes y Dotaciones","other","ni_puc_6101","FALSE","account.data_account_type_expense"
+"ni_puc_6102",6102,"GASTOS DE FUNCIONAMIENTO","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610201",610201,"ARRENDAMIENTOS Y ADECUACIONES LOCATIVAS","view","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_61020101",61020101,"Arrendamientos","other","ni_puc_610201","FALSE","account.data_account_type_expense"
+"ni_puc_61020102",61020102,"Mantenimiento y Adecuaciones Locativas","other","ni_puc_610201","FALSE","account.data_account_type_expense"
+"ni_puc_610202",610202,"SERVICIOS PUBLICOS","view","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_61020201",61020201,"Energía Eléctrica","other","ni_puc_610202","FALSE","account.data_account_type_expense"
+"ni_puc_61020202",61020202,"Acueducto y Alcantarillado","other","ni_puc_610202","FALSE","account.data_account_type_expense"
+"ni_puc_61020203",61020203,"Telefonía E1","other","ni_puc_610202","FALSE","account.data_account_type_expense"
+"ni_puc_61020204",61020204,"Telefonía Celular","other","ni_puc_610202","FALSE","account.data_account_type_expense"
+"ni_puc_61020205",61020205,"Internet","other","ni_puc_610202","FALSE","account.data_account_type_expense"
+"ni_puc_61020206",61020206,"Basura","other","ni_puc_610202","FALSE","account.data_account_type_expense"
+"ni_puc_610203",610203,"HONORARIOS Y SERVICIOS EXTERNOS","view","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_61020301",61020301,"Honorarios Legales","other","ni_puc_610203","FALSE","account.data_account_type_expense"
+"ni_puc_61020302",61020302,"Honorarios y Servicios Profesionales","other","ni_puc_610203","FALSE","account.data_account_type_expense"
+"ni_puc_610204",610204,"PAPELERIA Y �TILES DE ESCRITORIO","view","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_61020401",61020401,"Papelería Preimpresa","other","ni_puc_610204","FALSE","account.data_account_type_expense"
+"ni_puc_61020402",61020402,"Papelería y útiles de Escritorio","other","ni_puc_610204","FALSE","account.data_account_type_expense"
+"ni_puc_610205",610205,"Cuotas y Suscripciones","other","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_610206",610206,"Donaciones","other","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_610207",610207,"ASEO Y CAFETERIA","view","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_61020701",61020701,"Implementos de Aseo","other","ni_puc_610207","FALSE","account.data_account_type_expense"
+"ni_puc_61020702",61020702,"Suministros de Cafetería","other","ni_puc_610207","FALSE","account.data_account_type_expense"
+"ni_puc_610208",610208,"Restaurantes Directivos","other","ni_puc_6102","FALSE","account.data_account_type_expense"
+"ni_puc_6103",6103,"IMPUESTOS Y CONTRIBUCIONES","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610301",610301,"Impuestos y Contribuciones","other","ni_puc_6103","FALSE","account.data_account_type_expense"
+"ni_puc_610302",610302,"Impuesto Bienes Inmuebles (IBI)","other","ni_puc_6103","FALSE","account.data_account_type_expense"
+"ni_puc_6104",6104,"AMORTIZACIONES Y DEPRECIACIONES","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610401",610401,"Depreciaciones","other","ni_puc_6104","FALSE","account.data_account_type_expense"
+"ni_puc_610402",610402,"Amortizaciones","other","ni_puc_6104","FALSE","account.data_account_type_expense"
+"ni_puc_6105",6105,"GASTOS NO DEDUCIBLES","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610501",610501,"Gastos no Deducibles - IR no Retenido","other","ni_puc_6105","FALSE","account.data_account_type_expense"
+"ni_puc_610502",610502,"Gastos no Deducibles - Multas","other","ni_puc_6105","FALSE","account.data_account_type_expense"
+"ni_puc_610503",610503,"Otros Gastos no Deducibles","other","ni_puc_6105","FALSE","account.data_account_type_expense"
+"ni_puc_6106",6106,"PERDIDA POR CR�DITOS","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610601",610601,"Cartera de Difícil Cobro","other","ni_puc_6106","FALSE","account.data_account_type_expense"
+"ni_puc_6107",6107,"SEGUROS ADM�N","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610701",610701,"Seguro de Mercanc�as","other","ni_puc_6107","FALSE","account.data_account_type_expense"
+"ni_puc_610702",610702,"Seguro de Veh�culos","other","ni_puc_6107","FALSE","account.data_account_type_expense"
+"ni_puc_6108",6108,"GASTOS MUNICIPALES (Alcald�a, Bomberos, Etc)","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610801",610801,"Alcald�a Municipal Impuesto Sobre las Ventas 1%","other","ni_puc_6108","FALSE","account.data_account_type_expense"
+"ni_puc_610802",610802,"Seguro de Veh�culos","other","ni_puc_6108","FALSE","account.data_account_type_expense"
+"ni_puc_6109",6109,"MANTENIMIENTOS","view","ni_puc_61","FALSE","account.data_account_type_expense"
+"ni_puc_610901",610901,"Maquinaria y Equipo","other","ni_puc_6109","FALSE","account.data_account_type_expense"
+"ni_puc_610902",610902,"Equipo de Computo","other","ni_puc_6109","FALSE","account.data_account_type_expense"
+"ni_puc_610903",610903,"Equipo de Oficina","other","ni_puc_6109","FALSE","account.data_account_type_expense"
+"ni_puc_62",62,"GASTOS DE VENTAS","view","ni_puc_6","FALSE","account.data_account_type_expense"
+"ni_puc_6201",6201,"GASTOS DE PERSONAL DE VENTAS","view","ni_puc_62","FALSE","account.data_account_type_expense"
+"ni_puc_620101",620101,"Sueldos y Salarios Ventas","other","ni_puc_6201","FALSE","account.data_account_type_expense"
+"ni_puc_620102",620102,"Prestaciones Laborales Ventas","other","ni_puc_6201","FALSE","account.data_account_type_expense"
+"ni_puc_620103",620103,"Gastos Variables Ventas","other","ni_puc_6201","FALSE","account.data_account_type_expense"
+"ni_puc_6202",6202,"GASTOS DEL EXTERIOR","view","ni_puc_62","FALSE","account.data_account_type_expense"
+"ni_puc_620201",620201,"Inscripción en Ferias","other","ni_puc_6202","FALSE","account.data_account_type_expense"
+"ni_puc_620202",620202,"Transportes en el Exterior","other","ni_puc_6202","FALSE","account.data_account_type_expense"
+"ni_puc_620203",620203,"Hoteles y Restaurantes del Exterior","other","ni_puc_6202","FALSE","account.data_account_type_expense"
+"ni_puc_6203",6203,"VIVIENDA ALIMENTACION Y TRANSPORTE NACIONAL","view","ni_puc_62","FALSE","account.data_account_type_expense"
+"ni_puc_620301",620301,"Gastos de Vivienda","other","ni_puc_6203","FALSE","account.data_account_type_expense"
+"ni_puc_620302",620302,"Gastos de Transporte Nacional","other","ni_puc_6203","FALSE","account.data_account_type_expense"
+"ni_puc_620303",620303,"Gastos de Alimentación Nacional","other","ni_puc_6203","FALSE","account.data_account_type_expense"
+"ni_puc_620304",620304,"Hoteles Nacionales","other","ni_puc_6203","FALSE","account.data_account_type_expense"
+"ni_puc_6204",6204,"ALQUILER DE VEHICULOS","view","ni_puc_62","FALSE","account.data_account_type_expense"
+"ni_puc_6205",6205,"MANTENIMIENTO DE VEHICULOS","view","ni_puc_62","FALSE","account.data_account_type_expense"
+"ni_puc_620501",620501,"VEHICULO 1 MERCEDES","view","ni_puc_6205","FALSE","account.data_account_type_expense"
+"ni_puc_62050101",62050101,"Combustibles Veh. 1 Mercedes","other","ni_puc_620501","FALSE","account.data_account_type_expense"
+"ni_puc_62050102",62050102,"Vehículo 1 Mercedes","other","ni_puc_620501","FALSE","account.data_account_type_expense"
+"ni_puc_62050103",62050103,"Mantenimientos Veh. 1 Mercedes","other","ni_puc_620501","FALSE","account.data_account_type_expense"
+"ni_puc_620502",620502,"VEHICULO 2 VENDEDOR","view","ni_puc_6205","FALSE","account.data_account_type_expense"
+"ni_puc_62050201",62050201,"Combustibles Veh. 2 Vendedor","other","ni_puc_620502","FALSE","account.data_account_type_expense"
+"ni_puc_62050202",62050202,"Lubricantes Veh. 2 Vendedor","other","ni_puc_620502","FALSE","account.data_account_type_expense"
+"ni_puc_62050203",62050203,"Mantenimientos Veh. 2 Vendedor","other","ni_puc_620502","FALSE","account.data_account_type_expense"
+"ni_puc_6206",6206,"MANTENIMIENTO DE MOTOS","view","ni_puc_62","FALSE","account.data_account_type_expense"
+"ni_puc_620601",620601,"UTILIDAD O PERDIDA POR VENTA DE ACTIVOS","view","ni_puc_6206","FALSE","account.data_account_type_expense"
+"ni_puc_62060101",62060101,"Combustibles Moto 1","other","ni_puc_620601","FALSE","account.data_account_type_expense"
+"ni_puc_62060102",62060102,"Lubricantes Moto 2","other","ni_puc_620601","FALSE","account.data_account_type_expense"
+"ni_puc_62060103",62060103,"Mantenimientos Moto 2","other","ni_puc_620601","FALSE","account.data_account_type_expense"
+"ni_puc_7",7,"OTROS INGRESOS","view","ni_puc_root","FALSE","account.data_account_type_income"
+"ni_puc_71",71,"PRODUCTOS FINANCIEROS","view","ni_puc_7","FALSE","account.data_account_type_income"
+"ni_puc_7101",7101,"INTERESES DEVENGADOS S/CTA MONETARIA","view","ni_puc_71","FALSE","account.data_account_type_income"
+"ni_puc_7102",7102,"OTROS INGRESOS","view","ni_puc_71","FALSE","account.data_account_type_income"
+"ni_puc_72",72,"GANANCIA Y/O PÉRDIDA CAMBIARIA","view","ni_puc_7","FALSE","account.data_account_type_income"
+"ni_puc_7201",7201,"DIFERENCIAL CAMBIARIO","view","ni_puc_72","FALSE","account.data_account_type_income"
+"ni_puc_7202",7202,"DIFERENCIAL CAMBIARIO POR REEX","view","ni_puc_72","FALSE","account.data_account_type_income"
+"ni_puc_73",73,"VENTA DE ACTIVO FIJO","view","ni_puc_7","FALSE","account.data_account_type_income"
+"ni_puc_7301",7301,"UTILIDAD O PERDIDA POR VENTA DE ACTIVOS FIJOS","view","ni_puc_73","FALSE","account.data_account_type_income"
+"ni_puc_8",8,"GASTOS FINANCIEROS","view","ni_puc_root","FALSE","account.data_account_type_expense"
+"ni_puc_81",81,"GASTOS BANCARIOS","view","ni_puc_8","FALSE","account.data_account_type_expense"
+"ni_puc_8101",8101,"INTERESES POR PRÉSTAMOS BANCARIOS","view","ni_puc_81","FALSE","account.data_account_type_expense"
+"ni_puc_8102",8102,"COMISIONES BANCARIAS","view","ni_puc_81","FALSE","account.data_account_type_expense"
+"ni_puc_8103",8103,"IMPUESTOS A LA OPERACIONES BANCARIAS","view","ni_puc_81","FALSE","account.data_account_type_expense"
+"ni_puc_8104",8104,"INTERESES POR SOBREGIROS","view","ni_puc_81","FALSE","account.data_account_type_expense"
